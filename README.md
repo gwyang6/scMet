@@ -15,20 +15,24 @@ Installation
 1.Clone the repository.
 
 ```
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/gwyang6/scMet.git
 ```
 
 2.Navigate to the project directory.
 
 ```
-cd yourrepository
+cd zsMet
 ```
 3.Set up a virtual environment.
 
 ```
-python -m venv venv
+python -m zsMet
+```
+
 ```
 source venv/bin/activate  # For Linux/Mac
+```
+
 ```
 venv\Scripts\activate  # For Windows
 ```
