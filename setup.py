@@ -5,7 +5,7 @@ def readme_file():
         return rf
 
 setup(
-    name='zsMet',
+    name='scMet',
     version='1.0.0',
     author='Gw yang',
     author_email='stu_gwyang@163.com',
