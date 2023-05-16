@@ -16,7 +16,7 @@ setup(
     install_requires=[
         'scanpy',
         'pandas',
-        'combat',
+        'combat==0.2.1',
         'numpy',
         'warnings',
         'matplotlib',
