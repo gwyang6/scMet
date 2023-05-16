@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 5.Run
 
-'''
+```
 python main.py
 ```
 
