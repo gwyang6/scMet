@@ -21,12 +21,12 @@ git clone https://github.com/gwyang6/scMet.git
 2.Navigate to the project directory.
 
 ```
-cd zsMet
+cd scMet
 ```
 3.Set up a virtual environment.
 
 ```
-python -m zsMet
+python -m scMet
 ```
 
 ```
