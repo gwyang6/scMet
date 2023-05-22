@@ -93,7 +93,7 @@ def loop_choose_std(best_model, cell_type_proportions_df, common_genes_metabolis
         print(f"Metabolism_ UMAP image will be saved to: {save_path}")
         print(f"The current standard deviation value is: {z_std},Please adjust according to the UMAP clustering effect")
         std_str = str(z_std)
-        sc.pl.umap(adata, color=['cell_type'], legend_loc='on data',title='The current std is'+std_str,frameon=True, show=False)
+        sc.pl.umap(adata, color=['cell_type'], legend_loc='on data',title='The current std is '+std_str,frameon=True, show=False)
         img.append(save_path)
         plt.savefig(save_path)
         plt.close()

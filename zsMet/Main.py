@@ -18,7 +18,7 @@ import anndata as ad
 import argparse
 
 from Dataloader import load_data,filter_genes,preprocess_and_plot_umap
-from CVAEmodel import  preprocess_and_plot_umap_metabolism,prepare_train_val_data,CVAE,get_condition_dim,train_cvae
+from CVAEmodel import preprocess_and_plot_umap_metabolism,prepare_train_val_data,CVAE,get_condition_dim,train_cvae
 from Deconvolution import scale_data,compute_cell_type_proportions
 from GenerateData import simulate_bulk_data_pre,normalize_columns_to_sum_one,generate_synthetic_data,calculate_gene_expression_correlations
 from Simulation import simulate_bulk_data,generate_umap_plots
@@ -29,7 +29,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore")
 
-parser = argparse.ArgumentParser(description='scFEA: A graph neural network model to estimate cell-wise metabolic flux using single cell RNA-seq data')
+parser = argparse.ArgumentParser(description='ScMet: A package used to generate sc RNA seq data that can represent Bulk RNA seq data, involving NNLS and CVAE')
 
 parser.add_argument('--sc_data_dir', nargs='?',  type=str, default=None,
                     help='List of file names for storing single cell data.')

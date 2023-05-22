@@ -1,3 +1,20 @@
+import os
+import scanpy as sc
+import pandas as pd
+from combat.pycombat import pycombat
+import numpy as np
+import warnings
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import scale
+from tqdm import tqdm
+from scipy.optimize import nnls
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
+from scipy.stats import spearmanr
+import tensorflow as tf
+from tensorflow.keras import layers
+import random
+import anndata as ad
 def simulate_bulk_data(cell_type_proportions_df, df, bulk_metabolism_ratio,common_genes_metabolism, num_simulations=20, num_cells=5000 ):
     selected_gene_expression_df_total = []
     selected_celltype = []
@@ -53,7 +70,7 @@ def simulate_bulk_data(cell_type_proportions_df, df, bulk_metabolism_ratio,commo
         selected_celltype.append(selected_cells_label)
         selected_samplename.append(selected_sample_name)
         print(
-            f"Select the fitting result of the {Item + 1}th order,with a sample distance of {min_distance},and a correlation of{best_corr}")
+            f"Select the fitting result of the {Item + 1}th order,with a sample distance of {min_distance},and a correlation of {best_corr}")
 
     selected_gene_expression_df_total = pd.concat(selected_gene_expression_df_total, axis=0)
     selected_gene_expression_df_total.columns = common_genes_metabolism
