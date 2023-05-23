@@ -6,6 +6,7 @@ scMet
 .. image:: https://img.shields.io/badge/License-MIT-blue.svg
    :target: https://opensource.org/licenses/MIT
 
+.. image:: https://github.com/gwyang6/scMet/blob/main/Resource/scMet.png
 
 ZsMet is a CVAE model trained using sc RNA seq data and generating new and reasonable sc RNA seq. Then, the generated data is used to fit Bulk RNA seq to obtain sc RNA seq data that can represent Bulk RNA seq data
 
