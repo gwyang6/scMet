@@ -1,0 +1,10 @@
+scanpy
+pandas
+combat==0.2.1
+numpy
+matplotlib
+scikit-learn
+tqdm
+scipy
+tensorflow
+anndata
