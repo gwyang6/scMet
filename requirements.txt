@@ -10,3 +10,4 @@ tensorflow
 anndata
 mpmath
 IPython
+ipywidgets
