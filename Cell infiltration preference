@@ -1,3 +1,4 @@
+
 # Define a function called test.dist.table to perform statistical tests on the input distance table
 test.dist.table <- function(count.dist, min.rowSum = 0) {
   # Remove rows with row sums less than min.rowSum
